@@ -26,5 +26,16 @@ public class Main {
         System.out.println("After enlarging all shapes by factor 2:");
         shapeList.scaleAll(2, true);
         shapeList.displayAll();
+
+        System.out.println("After removing shape at index 1:");
+        shapeList.removeShape(1);
+        shapeList.displayAll();
+
+        System.out.println("Trying to remove invalid index:");
+        shapeList.removeShape(100);
+
+        System.out.println("Testing empty shape list:");
+        ShapeList emptyList = new ShapeList();
+        emptyList.displayAll();
     }
 }
